@@ -158,12 +158,12 @@
     margin-top: 12px;
   }
 }
-/* Đặt style mặc định cho ảnh */
+
 .moveimg .i {
-  transform: translateY(0); /* Mặc định không dịch chuyển */
+  transform: translateY(0); 
 }
 
-/* Áp dụng transform cho ảnh khi màn hình nhỏ hơn 767px */
+
 @media (max-width: 767px) {
   .moveimg .i {
     transform: translateY(-80px) !important;

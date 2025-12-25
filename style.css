@@ -1,0 +1,171 @@
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    z-index: 9999;
+    font-family: Inter, sans-serif;
+}
+
+.lang-toggle span {
+    font-size: 13px;
+    color: #000;
+}
+
+/* SWITCH */
+.switch {
+    width: 42px;
+    height: 22px;
+    background: #e5e5ea;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.25s ease;
+    border: 1px solid #c7c7cc;
+}
+
+.switch .thumb {
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 1.5px;
+    left: 2px;
+    transition: transform 0.25s ease;
+}
+
+/* TRẠNG THÁI BẬT (EN) */
+.switch.active {
+    background: #34c759;
+}
+
+.switch.active .thumb {
+    transform: translateX(20px);
+}
+
+.gradient-title {
+    font-family: 'Inter', sans-serif !important;
+    background: linear-gradient(90deg,
+        /* Teal */
+        #2DB8B0 0%,
+        #38C6B8 20%,
+
+        /* Deep Blue */
+     
+      
+        /* Lime Yellow */
+        #D6DF3A 80%,
+        #E3E85A 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+.pointer {
+    position: relative; 
+    top: 450px !important; 
+}
+.c-common-pointer-progress {
+    transform: translateX(500px);
+}
+@media (max-width: 768px) {
+    .c-common-pointer-progress {
+        transform: translate(10px, -450px);
+        /* X , Y */
+    }
+}
+@media (max-width: 768px) {
+  .l-page-top.__inquiry {
+    padding: 40px 16px;
+  }
+
+  .l-page-top.__inquiry .c-page-title {
+    font-size: 26px;
+    line-height: 1.3;
+    word-break: break-word;
+    white-space: normal;
+  }
+
+  .l-page-top.__inquiry .c-page-title .title .text {
+    font-size: 26px;
+    line-height: 1.3;
+    display: block;
+  }
+
+  .l-page-top.__inquiry .c-page-title .label .text {
+    font-size: 14px;
+    line-height: 1.5;
+    display: block;
+    margin-top: 12px;
+  }
+}
+@media (max-width: 968px) {
+    .header.l-common-header.footer {
+        top: 48px !important;
+    }
+    
+}
+.arrow {
+    width: 200px !important;
+    height: 200px !important;
+}
+
+.marquee{
+    height: 260px;
+}
+
+@media screen and (max-width: 767px) {
+    .diagram.l-about-diagram {
+        width: 94.667vw;
+        height: 0px !important;
+        clip-path: inset(0 round 8vw);
+    }
+}
+@media screen and (max-width: 972px) {
+    .diagram.l-about-diagram {
+        width: 94.667vw;
+        height: 1900px !important;
+        clip-path: inset(0 round 8vw);
+    }
+}
+/* FIX TITLE MOBILE */
+@media (max-width: 768px) {
+  .l-page-top.__inquiry {
+    padding: 40px 16px;
+  }
+
+  .l-page-top.__inquiry .c-page-title {
+    font-size: 26px;
+    line-height: 1.3;
+    word-break: break-word;
+    white-space: normal;
+  }
+
+  .l-page-top.__inquiry .c-page-title .title .text {
+    font-size: 26px;
+    line-height: 1.3;
+    display: block;
+  }
+
+  .l-page-top.__inquiry .c-page-title .label .text {
+    font-size: 14px;
+    line-height: 1.5;
+    display: block;
+    margin-top: 12px;
+  }
+}
+/* Đặt style mặc định cho ảnh */
+.moveimg .i {
+  transform: translateY(0); /* Mặc định không dịch chuyển */
+}
+
+/* Áp dụng transform cho ảnh khi màn hình nhỏ hơn 767px */
+@media (max-width: 767px) {
+  .moveimg .i {
+    transform: translateY(-80px) !important;
+  }
+}
